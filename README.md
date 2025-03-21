@@ -1,37 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Multi-Vendor Store Admin Dashboard
 
-## Getting Started
+##  Overview
+The **Multi-Vendor Store Admin Dashboard** is a web application that allows administrators to oversee and manage **vendors, customers, products, and orders**. Built with **Next.js**, **Tailwind CSS**, and **Zustand**, this dashboard provides essential insights and CRUD functionalities to efficiently handle multi-vendor store operations.
 
-First, run the development server:
+##  Features
+-  **Dashboard Overview** – View total sales, orders, active vendors, and customers.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+##  Technology Stack
+- **Next.js** – Framework for server-side rendering and routing.
+- **Tailwind CSS** – Utility-first styling for a sleek and responsive UI.
+- **Zustand** – State management for handling global application state.
+- **API Routes** – Next.js **`/api`** routes for fetching and managing data.
+
+##  Project Structure
+```
+/your-project
+│── /app
+│   ├── /api/dashboard/route.js  # API for dashboard data
+│   ├── /dashboard/page.js       # Dashboard UI
+│
+│── /components
+│   ├── DashboardStats.js        # Sales overview widget
+│
+│── /store
+│   ├── dashboardStore.js        # Zustand store for dashboard state
+│
+│── /public
+│   ├── /icons                   # Static icons
+│
+│── package.json                 # Dependencies
+│── tailwind.config.js            # Tailwind configuration
+│── README.md                     # Documentation
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+##  Installation & Setup
+###  Clone the Repository:
+```bash
+git clone https://github.com/your-repo/multi-vendor-dashboard.git
+cd multi-vendor-dashboard
+```
+### Install Dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+### Run the Development Server:
+```bash
+npm run dev
+```
+Then open `http://localhost:3000` in your browser. 
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Future Enhancements
+- **Role-Based Authentication (Admin & Vendor Access)**
+- **Real-time Data Updates with WebSockets**
+- **Dark Mode Support**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Contributing
+Contributions are welcome! If you'd like to improve the dashboard, feel free to fork the repository and submit a pull request.
 
-## Learn More
+---
+💡 **Need Help?** Reach out via GitHub Issues or start a discussion. 🚀
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# Store-Admin

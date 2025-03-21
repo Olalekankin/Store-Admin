@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+
+
+@theme {
+  --color-cA4:#A4CD3A;
+  --color-c9C:#9CA3AF;
+  --font-roboto: Roboto;
+  --font-sac: Sacramento;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sacramento&display=swap');
+
