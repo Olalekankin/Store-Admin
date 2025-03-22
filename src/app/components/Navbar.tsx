@@ -32,7 +32,7 @@ const Navbar = ()=> {
   }, [])
   const pathname = usePathname()
  return (
-   <div className='h-16 border-b border-gray-600 bg-black px-6 py-3.5'>
+   <div className='h-16 border-b border-gray-600 bg-black px-6 py-3.5 fixed lg:left-[255px] lg:w-[calc(100%-225px)]'>
      <div className='w-full flex items-center justify-between'>
        <SearchBox />
        <div className='flex items-center space-x-6'>

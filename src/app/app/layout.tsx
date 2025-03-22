@@ -15,7 +15,7 @@ export default function DashboardLayout({
 }>) {
   return (
       <main className='w-full flex h-screen bg-black'>
-        <section>
+        <section className='hidden lg:inline'>
           <Sidebar />
         </section>
 
