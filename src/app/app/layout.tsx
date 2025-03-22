@@ -14,12 +14,12 @@ export default function DashboardLayout({
   children: React.ReactNode
 }>) {
   return (
-      <main className='w-full flex h-screen'>
+      <main className='w-full flex h-screen bg-black'>
         <section>
           <Sidebar />
         </section>
 
-        <section className='flex flex-col flex-1 bg-amber-100 h-full'>
+        <section className='flex flex-col flex-1 h-full'>
           <Navbar />
           <section>{children}</section>
         </section>
